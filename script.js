@@ -11,7 +11,7 @@ const symbolsCheck = document.querySelector("#symbols");
 const indicator = document.querySelector("[data-indicator]");
 const generateBtn = document.querySelector(".generateButton");
 const allCheckBox = document.querySelectorAll("input[type=checkbox]");
-const symbolss = "!@#$%^&*(){}[]=<>/.";
+const symbols = "!@#$%^&*(){}[]=<>/.";
 
 let password = "";
 let passwordLength = 10;
@@ -61,7 +61,7 @@ function generateSymbol() {
     // return symbolss.charAt[rndNum]; 
     let result = "";
     for ( var i = 0; i < length; i++ ) {
-      result += symbolss.charAt(Math.floor(Math.random() *symbolss.length));
+      result += symbols.charAt(Math.floor(Math.random() * symbols.length));
     }
     return result;
 }
