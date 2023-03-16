@@ -59,7 +59,7 @@ function generateUppercase() {
 function generateSymbol() {
     // const rndNum = getRndInteger(0, 5);
     // return symbolss.charAt[rndNum]; 
-    let result = "";
+    let result = '';
     for ( var i = 0; i < length; i++ ) {
       result += symbols.charAt(Math.floor(Math.random() * symbols.length));
     }
